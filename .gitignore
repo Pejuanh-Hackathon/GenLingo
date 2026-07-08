@@ -76,3 +76,6 @@ Thumbs.db
 .venv/
 venv/
 ENV/
+
+# Secrets
+.streamlit/secrets.toml

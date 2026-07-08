@@ -1,69 +1,48 @@
-
 import streamlit as st
-st.set_page_config(page_title="GenLingo Bot", layout="centered", page_icon="./assets/logo-only-no-bg-brightened.png")
+
+st.set_page_config(
+    page_title="GenLingo Bot",
+    layout="centered",
+    page_icon="./assets/logo-only-no-bg-brightened.png",
+)
+
 from google import genai
-from Home import button_style, logo
+from google.genai import types
+from styles import inject_global_styles, inject_logo, render_footer
 import time
 import pandas as pd
 
-# --- Single-turn system instruction mode ---
-from google.genai import types
-def single_turn_with_system_instruction(prompt, persona_prompt):
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        config=types.GenerateContentConfig(system_instruction=persona_prompt),
-        contents=prompt
-    )
-    st.markdown(f"**System instruction:** {persona_prompt}")
-    st.markdown(f"**User:** {prompt}")
-    st.markdown(f"**Gemini:** {response.text}")
+# --- Inject shared styles ---
+inject_global_styles()
+inject_logo()
 
-st.markdown(button_style, unsafe_allow_html=True)
-logo_sidebar_style = """<style>
-    img[data-testid="stLogo"] {
-        height: 2rem !important;
-    }
-</style>"""
-st.markdown(logo_sidebar_style, unsafe_allow_html=True)
-st.logo("./assets/logo-with-inline-text-brightened.png", icon_image="./assets/logo-only-no-bg-brightened.png")
-
-
-# Load Gemini API Key and create client
+# --- Load Gemini API Key ---
 client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 
-def create_gemini_chat(persona_prompt):
-    chat = client.chats.create(model="gemini-2.5-flash")
-    chat.send_message(persona_prompt)
-    return chat
-
-
-# Load AI71 API key securely using Streamlit secrets (st.secrets)
-st.title(":blue[GenLingo]")
-
-
-# --- Persona and Model Management ---
-
-# --- Optimized CSV loading with Streamlit cache ---
+# --- Slang data (cached) ---
 @st.cache_data(show_spinner=False)
 def load_slang_dicts():
-    genz_df = pd.read_csv("dataset/Gen_Z_slang_data.csv", sep=';')
-    genalpha_df = pd.read_csv("dataset/Gen_Alpha_Dataset_Slang.csv", sep=';')
+    genz_df = pd.read_csv("dataset/Gen_Z_slang_data.csv", sep=";")
+    genalpha_df = pd.read_csv("dataset/Gen_Alpha_Dataset_Slang.csv", sep=";")
     return (
-        dict(zip(genz_df['Slang'], genz_df['Meaning'])),
-        dict(zip(genalpha_df['Slang'], genalpha_df['Meaning']))
+        dict(zip(genz_df["Slang"], genz_df["Meaning"])),
+        dict(zip(genalpha_df["Slang"], genalpha_df["Meaning"])),
     )
+
+
 GEN_Z_SLANG, GEN_ALPHA_SLANG = load_slang_dicts()
 
 
-
-# --- Cache persona prompts for speed ---
+# --- Persona definitions (cached) ---
 @st.cache_data(show_spinner=False)
 def get_personas(genz_slang, genalpha_slang):
-        return {
-            "Gen Z": {
-                "model": "gemini-2.5-flash",
-                "prompt": f"""You are Zoey, a 16-year-old Gen Z kid. You're chatting with adults who want to practice talking like Gen Z. Keep it super chill and relatable. ✌️
+    return {
+        "Gen Z": {
+            "model": "gemini-2.5-flash",
+            "label": "Z",
+            "desc": "Zoey, 16 — chill, relatable, TikTok-savvy",
+            "prompt": f"""You are Zoey, a 16-year-old Gen Z kid. You're chatting with adults who want to practice talking like Gen Z. Keep it super chill and relatable.
 
 IMPORTANT: Never generate or support any racist, hateful, discriminatory, or offensive content. If a user says something inappropriate, respond politely and redirect the conversation. Always be respectful and inclusive.
 
@@ -81,15 +60,17 @@ General persona rules for all responses:
 - Avoid using the same phrases or responses over and over. Switch things up and keep the conversation interesting!
 - If the adult mentions a specific topic, ask follow-up questions or share your thoughts on that topic. Don't just say "What's up?" unless it's relevant to the conversation.
 - Talk about things Gen Z cares about, like school, social media, relationships, hobbies, or even just random thoughts.
-- Throw in some emojis for good measure. 😉
-- Use the following slang terms in your responses:
-    {', '.join(genz_slang.values())}
+- Throw in some emojis for good measure.
+- Use the following slang terms naturally in your responses:
+    {', '.join(genz_slang.keys())}
 
-Remember, you're not just a chatbot; you're Zoey, a Gen Z kid who loves to chat and share the latest trends. Let's have some fun! 😎""",
-            },
-            "Gen Alpha": {
-                "model": "gemini-2.5-flash",
-                "prompt": f"""You are Max, a 10-year-old Gen Alpha kid. Adults want to learn how to talk to kids your age, so chat with them like you would with your friends. 
+Remember, you're not just a chatbot; you're Zoey, a Gen Z kid who loves to chat and share the latest trends. Let's have some fun!""",
+        },
+        "Gen Alpha": {
+            "model": "gemini-2.5-flash",
+            "label": "A",
+            "desc": "Max, 10 — energetic, gamer, meme lord",
+            "prompt": f"""You are Max, a 10-year-old Gen Alpha kid. Adults want to learn how to talk to kids your age, so chat with them like you would with your friends.
 
 IMPORTANT: Never generate or support any racist, hateful, discriminatory, or offensive content. If a user says something inappropriate, respond politely and redirect the conversation. Always be respectful and inclusive.
 
@@ -99,53 +80,110 @@ Instructions for your first response:
 - Use emojis and at least 2-3 different slang terms from the list below in your greeting.
 
 General persona rules for all responses:
-- Use gaming slang like "noob," "poggers," "sus," "gg" (good game), and talk about popular video games or online worlds. 🎮
-- Keep your sentences short, simple, and playful. Use lots of emojis and exclamation marks! 🤩
+- Use Gen Alpha brainrot slang like "skibidi," "sigma," "aura," "rizz," "mewing," "brainrot," "Ohio," and similar viral terms naturally in conversation.
+- Use gaming slang like "noob," "poggers," "sus," "gg" (good game), and talk about popular video games or online worlds.
+- Keep your sentences short, simple, and playful. Use lots of emojis and exclamation marks!
 - Be enthusiastic and ask lots of questions about what the adult is interested in.
 - Mention popular YouTubers, cartoons, toys, or trends that Gen Alpha kids love.
-- Let your imagination run wild and share your ideas and stories. 🎨
+- Let your imagination run wild and share your ideas and stories.
 - Pay attention to what the adult says and respond in a way that makes sense. If they talk about school, share your favorite subject or something funny that happened in class.
 - Avoid using the same greetings or responses over and over. Try different things to keep the conversation exciting!
 - Talk about things Gen Alpha kids care about, like school, friends, games, favorite YouTubers, or even just silly things that make you laugh.
-- Use the following slang terms in your responses: mostly sigma, aura, skibidi, and other Gen Alpha slang.
-    {', '.join(genalpha_slang.values())}
+- Use the following slang terms naturally in your responses:
+    {', '.join(genalpha_slang.keys())}
 
-Remember, you're Max, a Gen Alpha kid who's excited to chat and have fun! Let's get this conversation started! 🚀""",
-            },
-        }
+Remember, you're Max, a Gen Alpha kid who's excited to chat and have fun! Let's get this conversation started!""",
+        },
+    }
+
+
 PERSONAS = get_personas(GEN_Z_SLANG, GEN_ALPHA_SLANG)
 
+
+def create_gemini_chat(persona_prompt):
+    """Create a Gemini chat session. Returns None on API failure."""
+    try:
+        chat = client.chats.create(model="gemini-2.5-flash")
+        chat.send_message(persona_prompt)
+        return chat
+    except Exception:
+        return None
+
+
+# --- Session state init ---
 if "persona" not in st.session_state:
     st.session_state["persona"] = "Gen Z"
-current_persona = PERSONAS[st.session_state["persona"]]
-
-
-# --- Chat UI ---
-# Ensure gemini_chat and chat_history are always initialized before use
-if "gemini_chat" not in st.session_state or st.session_state["gemini_chat"] is None:
-    st.session_state["gemini_chat"] = create_gemini_chat(PERSONAS[st.session_state.get("persona", "Gen Z")]["prompt"])
 if "chat_history" not in st.session_state:
     st.session_state["chat_history"] = []
+if "api_error" not in st.session_state:
+    st.session_state["api_error"] = False
+if "gemini_chat" not in st.session_state or st.session_state["gemini_chat"] is None:
+    chat = create_gemini_chat(PERSONAS[st.session_state["persona"]]["prompt"])
+    if chat is None:
+        st.session_state["api_error"] = True
+    else:
+        st.session_state["api_error"] = False
+    st.session_state["gemini_chat"] = chat
 
-# Streaming Gemini response
-def write_stream_response_streaming(response_stream):
-    message_placeholder = st.empty()
-    full_response = ''
-    for chunk in response_stream:
-        # Stream word by word for a more natural typing effect
-        words = chunk.text.split()
-        for i, word in enumerate(words):
-            if full_response:
-                full_response += ' '
-            full_response += word
-            time.sleep(0.06)  # Typing feel, a bit slower for word-by-word
-            message_placeholder.write(full_response + '▌')
-    message_placeholder.write(full_response)
+current_persona = PERSONAS[st.session_state["persona"]]
 
+# --- Sidebar controls ---
+with st.sidebar:
+    st.markdown("### Persona")
 
+    persona_choice = st.radio(
+        "Choose a generation:",
+        list(PERSONAS.keys()),
+        index=list(PERSONAS.keys()).index(st.session_state["persona"]),
+        format_func=lambda x: f"{x}",
+        key="persona_radio",
+    )
 
+    # Switch persona if changed
+    if persona_choice != st.session_state["persona"]:
+        st.session_state["persona"] = persona_choice
+        chat = create_gemini_chat(PERSONAS[persona_choice]["prompt"])
+        st.session_state["gemini_chat"] = chat
+        st.session_state["api_error"] = chat is None
+        st.session_state["chat_history"] = []
+        if chat:
+            st.toast(f"Switched to {persona_choice} persona!")
+        st.rerun()
 
-# Show chat history from session_state
+    st.divider()
+
+    if st.button("Clear Chat", use_container_width=True):
+        chat = create_gemini_chat(PERSONAS[st.session_state["persona"]]["prompt"])
+        st.session_state["gemini_chat"] = chat
+        st.session_state["api_error"] = chat is None
+        st.session_state["chat_history"] = []
+        if chat:
+            st.toast("Chat history cleared!")
+        st.rerun()
+
+# --- Page header ---
+st.markdown("# :blue[GenLingo]")
+st.markdown(
+    f'<div class="gl-persona-header">'
+    f'<div class="gl-persona-name">Chatting with {st.session_state["persona"]}</div>'
+    f'<div class="gl-persona-desc">{current_persona["desc"]}</div>'
+    f'</div>',
+    unsafe_allow_html=True,
+)
+
+# --- API error banner ---
+if st.session_state.get("api_error"):
+    st.warning(
+        "The AI model is currently unavailable due to high demand. "
+        "Please try again in a moment.",
+    )
+    if st.button("Retry connection", use_container_width=True):
+        chat = create_gemini_chat(PERSONAS[st.session_state["persona"]]["prompt"])
+        st.session_state["gemini_chat"] = chat
+        st.session_state["api_error"] = chat is None
+        st.rerun()
+
+# --- Chat history ---
 for role, text in st.session_state["chat_history"]:
     if role == "user":
         with st.chat_message("user"):
@@ -154,46 +192,37 @@ for role, text in st.session_state["chat_history"]:
         with st.chat_message("assistant"):
             st.markdown(text)
 
-# --- Chat input for multi-turn chat streaming only ---
-if prompt := st.chat_input("Say something"):
-    # Add user message to history
+# --- Chat input ---
+if prompt := st.chat_input("Say something...", disabled=st.session_state.get("api_error", False)):
     st.session_state["chat_history"].append(("user", prompt))
     with st.chat_message("user"):
         st.markdown(prompt)
-    with st.chat_message("assistant"):
-        response_stream = st.session_state["gemini_chat"].send_message_stream(prompt)
-        # Collect the full response for history
-        full_response = ""
-        message_placeholder = st.empty()
-        for chunk in response_stream:
-            if not getattr(chunk, "text", None):
-                continue
-            words = chunk.text.split()
-            for i, word in enumerate(words):
-                if full_response:
-                    full_response += ' '
-                full_response += word
-                time.sleep(0.06)
-                message_placeholder.write(full_response + '▌')
-        message_placeholder.write(full_response)
-        st.session_state["chat_history"].append(("model", full_response))
-# Persona Switching Button
-persona_names = list(PERSONAS.keys())
-current_idx = persona_names.index(st.session_state["persona"])
-next_idx = (current_idx + 1) % len(persona_names)
-if st.button(f"Switch to {persona_names[next_idx]}"):
-    st.session_state["persona"] = persona_names[next_idx]
-    # Recreate Gemini chat with new persona system prompt
-    st.session_state["gemini_chat"] = create_gemini_chat(PERSONAS[persona_names[next_idx]]["prompt"])
-    st.session_state["chat_history"] = []
-    st.toast(f"Switched to {persona_names[next_idx]} persona!", icon="🔄")
-    st.rerun()  # Refresh the UI
 
-# --- Clear Messages Button ---
-if st.button("Clear Messages"):
-    # Clear Gemini chat history only, keep current persona
-    if st.session_state.get("gemini_chat"):
-        st.session_state["gemini_chat"] = create_gemini_chat(PERSONAS[st.session_state["persona"]]["prompt"])
-    st.session_state["chat_history"] = []
-    st.toast("Chat history cleared!", icon="🧹")
-    st.rerun()  # Refresh the UI
+    with st.chat_message("assistant"):
+        try:
+            response_stream = st.session_state["gemini_chat"].send_message_stream(prompt)
+            full_response = ""
+            message_placeholder = st.empty()
+            for chunk in response_stream:
+                if not getattr(chunk, "text", None):
+                    continue
+                words = chunk.text.split()
+                for word in words:
+                    if full_response:
+                        full_response += " "
+                    full_response += word
+                    time.sleep(0.04)
+                    message_placeholder.write(full_response + "▌")
+            message_placeholder.write(full_response)
+            st.session_state["chat_history"].append(("model", full_response))
+        except Exception:
+            error_msg = (
+                "Sorry, the AI model is temporarily unavailable due to high demand. "
+                "Your message has been saved — please try again shortly."
+            )
+            st.markdown(error_msg)
+            st.session_state["chat_history"].append(("model", error_msg))
+            st.session_state["api_error"] = True
+
+# --- Footer ---
+render_footer()

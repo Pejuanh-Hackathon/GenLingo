@@ -1,4 +1,3 @@
 streamlit==1.36.0
-ai71==0.0.18
 pandas
 google-genai

@@ -1,246 +1,233 @@
 Slang #,Gen,Slang,Meaning
-1,Alpha,Aesthetic,Pleasing to the eye
-2,Alpha,AF,"Intensifier (e.g., cool AF)"
-3,Z,Af,"Intensifier (e.g., ""cool af"" means ""very cool"")"
-4,Alpha,Aura,A distinctive quality
-5,Alpha,Aura,A distinctive quality or atmosphere
-6,Z,Aura,A distinctive atmosphere or quality surrounding a person
-7,Alpha,Bae,Significant other
-8,Z,Bae,Term of endearment for a significant other
-9,Z,Banger,An excellent song or event
-10,Alpha,Basic,Unoriginal or mainstream
-11,Alpha,Bet,Agreement or challenge
-12,Alpha,Bet,"Agreement, affirmation"
-13,Z,Bet,"Agreement or affirmation (similar to ""Okay"" or ""Got it"")"
-14,Alpha,Big mad,Very angry
-15,Alpha,Big mood,Strongly relatable feeling
-16,Z,Big mood,Strongly relatable feeling
-17,Alpha,Big oof,Big mistake or awkward situation
-18,Alpha,Big yikes,Extremely embarrassing
-19,Z,Big yikes,Extremely embarrassing
-20,Alpha,Bop,Good song
-21,Z,Bop,A good song
-22,Alpha,Bops,Good songs
-23,Z,Bops,Good songs
-24,Alpha,Boujee,Luxurious or fancy
-25,Alpha,Boujee,"Luxurious, high-class"
-26,Z,Boujee,Luxurious or high-class
-27,Alpha,Cancelled,Rejected or boycotted
-28,Alpha,Cancelled,Rejected or dismissed
-29,Z,Cancelled,Rejected or dismissed due to controversial behavior
-30,Alpha,Cap,Lie or falsehood
-31,Z,Cap,"Lie or falsehood (e.g., ""No cap"" means ""No lie"")"
-32,Z,Chill,Relaxed or calm
-33,Alpha,Chug,Drink quickly
-34,Alpha,Clout,Influence or fame
-35,Z,Clout,Influence or fame
-36,Alpha,Clout chasing,Seeking fame or influence
-37,Z,Clout chasing,Seeking fame or influence
-38,Alpha,Clutch,Perform well under pressure
-39,Z,Clutch,Performing under pressure
-40,Alpha,Cray,Crazy
-41,Alpha,Cringe,"Embarrassing, awkward"
-42,Z,Cringe,Embarrassing or awkward
-43,Alpha,Curve,Reject someone's advances
-44,Alpha,Dank,High quality or excellent
-45,Alpha,Dank,"High quality, excellent"
-46,Z,Dank,High quality or excellent
-47,Z,Dank meme,High-quality or funny meme
-48,Alpha,Dead,Extremely funny
-49,Alpha,Deadass,Seriously or truly
-50,Alpha,Deadass,"Seriously, truly"
-51,Z,Deadass,Seriously or truly
-52,Alpha,Dope,Cool or awesome
-53,Z,Dope,Cool or awesome
-54,Alpha,Drip,Stylish or fashionable attire
-55,Alpha,Drip,Stylish or fashionable
-56,Z,Drip,Stylish or fashionable attire
-57,Alpha,Extra,Over the top
-58,Alpha,Extra,"Over the top, dramatic"
-59,Alpha,Extra,"Over the top, excessive"
-60,Z,Extra,Over the top or excessive
-61,Alpha,Facts,True statement
-62,Alpha,Fam,Close friends or family
-63,Z,Fam,Close friends or family
-64,Alpha,Finesse,Skillfully handle
-65,Z,Finesse,To skillfully handle or manipulate a situation
-66,Alpha,Finsta,Fake Instagram account
-67,Alpha,Fire,Awesome or amazing
-68,Z,Fire,Amazing or awesome
-69,Alpha,Fit,Outfit
-70,Alpha,Flex,Show off
-71,Z,Flex,To show off or boast
-72,Alpha,FOMO,Fear of Missing Out
-73,Z,FOMO,Fear of Missing Out
-74,Alpha,Ghost,Disappear or ignore
-75,Z,Ghost,To ignore someone or cut off communication abruptly
-76,Alpha,Glow up,Major transformation
-77,Alpha,Glow up,Significant improvement
-78,Alpha,Glow up,Transform for the better
-79,Z,Glow up,A significant transformation or improvement in appearance or skills
-80,Alpha,Goat,Greatest of All Time
-81,Z,GOAT,Greatest of All Time
-82,Alpha,Gucci,Good or cool
-83,Alpha,Gucci,"Very good, excellent"
-84,Alpha,Gucci,"Good, cool"
-85,Z,Gucci,Good or cool
-86,Alpha,High-key,Openly or obviously
-87,Alpha,High-key,"Openly, obviously"
-88,Z,High-key,Openly or obviously
-89,Alpha,Hits different,A unique or special feeling
-90,Alpha,Hits different,Feels unique or special
-91,Alpha,Hundo P,"100 percent, absolutely"
-92,Alpha,Hundo P,100 percent certain
+1,Alpha,6-7,"Nonsensical meme punchline, used randomly as a comedic reply"
+2,Z,Aesthetic,Pleasing to the eye
+3,Alpha,Ate,Did something extremely well
+4,Z,Ate,Did something extremely well
+5,Alpha,Aura,A person's cool factor or social energy
+6,Alpha,Aura farming,Performing actions specifically to look cool to others
+7,Z,Bae,Significant other
+8,Z,Basic,Unoriginal or mainstream
+9,Z,Beige flag,Mildly unusual trait in a partner
+10,Alpha,Bet,Agreement or affirmation
+11,Z,Bet,Agreement or affirmation
+12,Z,Big mad,Very angry
+13,Z,Big mood,Strongly relatable feeling
+14,Z,Big oof,Big mistake or awkward situation
+15,Z,Big yikes,Extremely embarrassing
+16,Alpha,Bop,A catchy or good song
+17,Z,Bop,A catchy or good song
+18,Alpha,Boujee,Luxurious or high-class
+19,Z,Boujee,Luxurious or fancy
+20,Alpha,Brainrot,Consuming too much mindless or low-quality internet content
+21,Z,Brainrot,Consuming too much low-quality internet content
+22,Alpha,Brat,"Rebellious, carefree attitude inspired by pop culture"
+23,Z,Brat,"Rebellious, carefree attitude"
+24,Z,Bussin,"Really good, especially food"
+25,Z,Cancelled,Rejected or boycotted
+26,Alpha,Canon event,An inevitable life experience that shapes your character
+27,Z,Canon event,An inevitable experience that shapes your character
+28,Alpha,Cap,Lie or falsehood
+29,Z,Cap,Lie or falsehood
+30,Alpha,Chill,Relaxed or calm
+31,Alpha,Chopped,Unattractive or undesirable
+32,Z,Chug,Drink quickly
+33,Alpha,Clout,Influence or fame
+34,Z,Clout,Influence or fame
+35,Z,Clout chasing,Seeking fame or influence
+36,Alpha,Clutch,Performing well under pressure
+37,Z,Clutch,Performing well under pressure
+38,Alpha,Cooked,"Extremely tired, overwhelmed, or finished"
+39,Z,Cooked,"Extremely tired, overwhelmed, or finished"
+40,Alpha,Crash out,Lose composure or act out dramatically
+41,Z,Crash out,Lose composure or act out dramatically
+42,Z,Cray,Crazy
+43,Alpha,Cringe,Embarrassing or awkward
+44,Z,Cringe,Embarrassing or awkward
+45,Z,Curve,Reject someone's advances
+46,Alpha,D1 crashout,An elite or extreme version of crashing out
+47,Alpha,Dank,High quality or excellent
+48,Z,Dank,High quality or excellent
+49,Alpha,Dank meme,A high-quality or particularly funny meme
+50,Z,Dead,Extremely funny
+51,Alpha,Deadass,Seriously or truly
+52,Z,Deadass,Seriously or truly
+53,Alpha,Delulu,"Short for delusional, having wildly optimistic expectations"
+54,Z,Delulu,"Short for delusional, wildly optimistic expectations"
+55,Alpha,Demure,"Being modest or restrained, often used ironically"
+56,Z,Demure,"Being modest or restrained, often used ironically"
+57,Alpha,Dope,Cool or awesome
+58,Z,Dope,Cool or awesome
+59,Alpha,Drip,Stylish or fashionable attire
+60,Z,Drip,Stylish or fashionable attire
+61,Z,Era,"A phase of life (e.g., ""I'm in my healing era"")"
+62,Alpha,Extra,Over the top or excessive
+63,Z,Extra,Over the top or dramatic
+64,Alpha,FOMO,Fear of Missing Out
+65,Z,FOMO,Fear of Missing Out
+66,Z,Facts,Agreeing something is true
+67,Alpha,Fam,Close friends or family
+68,Z,Fam,Close friends or family
+69,Alpha,Fanum tax,Taking food from someone (originated from streamer Fanum)
+70,Alpha,Finesse,To skillfully handle a situation
+71,Z,Finesse,Skillfully handle a situation
+72,Z,Finsta,Fake Instagram account
+73,Alpha,Fire,Amazing or awesome
+74,Z,Fire,Awesome or amazing
+75,Z,Fit,Outfit
+76,Alpha,Flex,To show off or boast
+77,Z,Flex,Show off or boast
+78,Alpha,GOAT,Greatest of All Time
+79,Z,GOAT,Greatest of All Time
+80,Alpha,Ghost,To ignore someone or cut off communication abruptly
+81,Z,Ghost,Disappear or ignore someone
+82,Alpha,Glazing,Excessively praising or complimenting someone
+83,Z,Glazing,Excessively praising or complimenting someone
+84,Alpha,Glow up,A significant transformation or improvement
+85,Z,Glow up,Major transformation or improvement
+86,Alpha,Gucci,Good or cool
+87,Z,Gucci,Good or cool
+88,Alpha,Gyatt,Exclamation when seeing someone attractive
+89,Alpha,Hawk tuah,Viral nonsensical catchphrase
+90,Alpha,High-key,Openly or obviously
+91,Z,High-key,Openly or obviously
+92,Z,Hits different,A unique or special feeling
 93,Z,Hundo P,"100 percent, absolutely"
-94,Alpha,Hype,Excitement
-95,Alpha,Hype,"Excitement, enthusiasm"
-96,Z,Hype,Excitement or enthusiasm
-97,Alpha,I can't even,Overwhelmed or speechless
-98,Alpha,I can't even,Overwhelmed
-99,Z,I can't even,Overwhelmed or speechless
-100,Alpha,I'm dead,"It's so funny I'm ""dead"""
-101,Alpha,It's the ____ for me,Pointing out something noteworthy
-102,Alpha,JOMO,Joy of Missing Out
-103,Z,JOMO,Joy of Missing Out
-104,Alpha,Juiced,Excited or hyped
-105,Alpha,Karen,Entitled or demanding woman
-106,Alpha,Karen,Entitled person
-107,Alpha,Karen,"Entitled, demanding person"
-108,Z,Karen,Entitled or demanding person
-109,Alpha,Keep it 100,Be honest
-110,Z,Kicks,Shoes
-111,Alpha,Kiki,A party or gathering
-112,Alpha,Left on read,Ignored after reading a message
-113,Z,Legit,Genuine or real
-114,Alpha,Lit,Exciting or fun
-115,Alpha,Lit,"Exciting, fun"
-116,Z,Lit,Exciting or excellent
-117,Alpha,Lit AF,Extremely exciting
-118,Z,Lit AF,Extremely exciting or excellent
-119,Z,Litty,Very exciting or excellent
-120,Alpha,Low-key,Secretly or moderately
-121,Alpha,Low-key,"Secretly, moderately"
-122,Z,Low-key,Modestly or secretly
-123,Alpha,Main character,Person who stands out
-124,Alpha,Mood,A relatable feeling
-125,Alpha,Mood,A feeling or vibe
-126,Z,Mood,A relatable feeling or situation
+94,Alpha,Hype,Excitement or enthusiasm
+95,Z,Hype,Excitement or enthusiasm
+96,Alpha,I can't even,Overwhelmed or speechless
+97,Z,I can't even,Overwhelmed or speechless
+98,Z,I'm dead,So funny it's overwhelming
+99,Z,Ick,Sudden feeling of disgust toward someone
+100,Z,It's giving,Used to describe something's vibe
+101,Alpha,JOMO,Joy of Missing Out
+102,Z,JOMO,Joy of Missing Out
+103,Z,Juiced,Excited or hyped
+104,Alpha,Karen,Entitled or demanding person
+105,Z,Karen,Entitled or demanding person
+106,Z,Keep it 100,Be honest
+107,Alpha,Kicks,"Shoes, particularly sneakers"
+108,Z,Kiki,A party or gathering
+109,Z,Left on read,Ignored after reading a message
+110,Alpha,Legit,Genuine or real
+111,Alpha,Let him cook,Give someone space to finish what they're doing
+112,Z,Let him cook,Give someone space to finish what they're doing
+113,Alpha,Lit,Exciting or excellent
+114,Z,Lit,Exciting or fun
+115,Alpha,Litty,Very exciting or fun
+116,Alpha,Looksmaxxing,Attempting to maximize physical attractiveness
+117,Alpha,Low-key,Modestly or secretly
+118,Z,Low-key,Secretly or moderately
+119,Z,Main character,Person who stands out
+120,Alpha,Mewing,Pressing tongue to roof of mouth to define the jawline
+121,Alpha,Mogged,Physically outperformed or overshadowed by someone
+122,Alpha,Mood,A relatable feeling or situation
+123,Z,Mood,A relatable feeling or situation
+124,Z,Mother,Term of admiration for a confident person
+125,Alpha,NPC,Someone who acts robotic or scripted in real life
+126,Alpha,Nah I'd win,Confident declaration (anime reference)
 127,Alpha,No cap,"No lie, for real"
-128,Alpha,No cap,No lie
-129,Z,No cap,No lie
-130,Alpha,No chill,"Overly intense, serious"
-131,Z,No chill,Overly intense or serious
-132,Alpha,Noob,"Newbie, beginner"
-133,Z,Noob,Newbie or inexperienced person
-134,Z,OG,Original or authentic
-135,Z,On fleek,Perfectly styled or groomed
-136,Alpha,On God,I swear
-137,Alpha,On point,Perfectly executed
-138,Alpha,OTP,One True Pairing
-139,Z,OTP,One True Pairing (ideal romantic couple)
-140,Alpha,Periodt,"End of discussion, definitive"
-141,Alpha,Periodt,End of discussion
-142,Z,Periodt,"End of discussion, definitive"
-143,Alpha,Pog,Impressive achievement
-144,Z,Pog,Play of the Game (impressive move or achievement)
-145,Alpha,Ratchet,Unrefined or uncouth
-146,Alpha,Ratioed,More dislikes than likes
-147,Alpha,Receipts,Proof or evidence
-148,Alpha,Receipts,"Proof, evidence"
-149,Z,Receipts,Proof or evidence
-150,Alpha,Roast,"Tease, criticize"
-151,Z,Roast,To make fun of or criticize someone
-152,Alpha,Salty,Bitter or upset
-153,Alpha,Salty,"Bitter, upset"
-154,Z,Salty,Upset or bitter
-155,Alpha,Savage,"Fierce, bold"
-156,Z,Savage,Ruthless or daring
-157,Z,Savage AF,Extremely bold or ruthless
-158,Alpha,Say less,Understood
-159,Alpha,Secure the bag,Obtain something valuable
-160,Alpha,Shade,Subtle disrespect
-161,Z,Shade,Subtle disrespect or criticism
-162,Alpha,Ship,Support a romantic relationship
-163,Z,Ship,To support or hope for a romantic relationship between characters
-164,Alpha,Shook,Shocked or surprised
-165,Alpha,Shook,"Shocked, surprised"
-166,Z,Shook,Shocked or surprised
-167,Alpha,Shooketh,Extremely shocked
-168,Z,Shooketh,Extremely shocked or surprised
-169,Alpha,Sigma,"Independent, non-conformist"
-170,Z,Sigma,An independent person who doesn’t conform to social hierarchies
-171,Alpha,Simp,Overly attentive to someone
-172,Z,Simp,Person who is overly attentive or submissive
-173,Alpha,Skrt,Sound of tires screeching; stop
-174,Alpha,Sksksk,Expression of laughter or excitement
-175,Z,Sksksk,Expression of laughter or excitement
-176,Alpha,Slaps,Sounds good (especially music)
-177,Alpha,Slaps,Sounds good
-178,Alpha,Slaps,"Really good, especially in music"
-179,Z,Slaps,Sounds good (especially music)
-180,Alpha,Slay,To do something exceptionally well
-181,Alpha,Slay,"Succeed, excel"
-182,Z,Slay,To excel or do something exceptionally well
-183,Alpha,Slide into DMs,Privately message someone
-184,Alpha,Snack,Attractive person
-185,Alpha,Snatched,Looking good or stylish
-186,Alpha,Spill the tea,Share the gossip
-187,Z,Squad,Group of friends
-188,Alpha,Stan,Overzealous fan
-189,Alpha,Stan,Overly enthusiastic fan
-190,Z,Stan,Overzealous fan
-191,Alpha,Sus,"Suspicious, suspect"
-192,Z,Sus,Suspicious
-193,Alpha,Swerve,Avoid or dodge
-194,Z,Swole,Muscular or fit
-195,Alpha,TBT,Throwback Thursday
-196,Alpha,Tea,Gossip
-197,Alpha,Tea,"Gossip, news"
-198,Z,Tea,Gossip or news
-199,Z,Tea spill,Share gossip or news
-200,Alpha,TFW,That Feeling When
-201,Z,TFW,That Feeling When
-202,Alpha,Thicc,Curvaceous or full-figured
-203,Alpha,Thicc,"Full-figured, curvaceous"
-204,Z,Thicc,Curvaceous or having a full figure
-205,Alpha,Thirst trap,Flirtatious photo
-206,Z,Thirst trap,Flirtatious photo posted to attract attention
-207,Alpha,Thirsty,Desperate for attention
-208,Z,Thirsty,Desperate for attention or validation
-209,Alpha,Throw shade,Subtly insult or criticize
-210,Z,Throw shade,Subtly insult or criticize
-211,Z,Throwing shade,"Making a subtle, disrespectful comment"
-212,Alpha,Trash,Bad or low quality
-213,Z,Trash,Bad or low quality
-214,Alpha,Trolling,Deliberately provoking
-215,Z,Trolling,Deliberately provoking or upsetting others online
-216,Z,Vibe,Atmosphere or feeling
-217,Alpha,Vibe check,Assess someone's mood or personality
-218,Alpha,Vibes,"Feelings, atmosphere"
-219,Z,Vibes,"Feelings, atmosphere"
-220,Alpha,Vibing,Enjoying the atmosphere
-221,Z,Vibing,Enjoying the atmosphere
-222,Alpha,W,Win or success
-223,Alpha,W,"Win, success"
-224,Z,W,Win or success
-225,Alpha,Wack,Lame or bad
-226,Alpha,Wavy,Cool or chill
-227,Z,Whip,Car
-228,Alpha,Wig,"Shocked, impressed"
-229,Z,Wig,Surprised or impressed
-230,Alpha,Wig snatched,Amazed or impressed
-231,Alpha,Wig snatched,"Amazed, impressed"
-232,Z,Wig snatched,Amazed or impressed
-233,Alpha,Woke,Socially aware
-234,Z,Woke,Socially aware or politically progressive
-235,Z,Yass,Expression of excitement or approval
-236,Alpha,Yeet,To throw with force
-237,Z,Yeet,To throw something with force
-238,Alpha,Yikes,Expression of shock or concern
-239,Alpha,YOLO,You Only Live Once
-240,Z,YOLO,You Only Live Once
-241,Alpha,Zaddy,Attractive man
-242,Alpha,Zaddy,"Attractive, fashionable man"
-243,Z,Zaddy,"Attractive, fashionable man"
-244,Z,Zoomer,Member of Generation Z or Gen Alpha
-245,Alpha,Zoomies,Sudden burst of energy
+128,Z,No cap,"No lie, for real"
+129,Alpha,No chill,Overly intense or serious
+130,Z,No chill,Overly intense or serious
+131,Alpha,Noob,Newbie or inexperienced person
+132,Alpha,OG,Original or authentic
+133,Z,OTP,One True Pairing
+134,Alpha,Ohio,"Adjective for something weird, cringe, or chaotic"
+135,Z,On God,I swear
+136,Alpha,On fleek,Perfectly styled or groomed
+137,Z,On point,Perfectly executed
+138,Z,Periodt,"End of discussion, definitive"
+139,Z,Pick me,Someone who seeks validation by being different
+140,Alpha,Pog,"Play of the Game, an impressive achievement"
+141,Z,Ratchet,Unrefined or uncouth
+142,Z,Ratioed,More dislikes than likes
+143,Alpha,Receipts,Proof or evidence
+144,Z,Receipts,Proof or evidence
+145,Z,Red flag,Warning sign in a relationship
+146,Alpha,Rizz,"Short for charisma, ability to charm others"
+147,Alpha,Rizzler,Someone who is highly charismatic or good at flirting
+148,Alpha,Roast,To humorously insult or criticize
+149,Z,Roman Empire,Something you think about frequently
+150,Alpha,Salty,Upset or bitter
+151,Z,Salty,Bitter or upset
+152,Alpha,Savage,Ruthless or daring
+153,Z,Savage,Fierce or bold
+154,Z,Say less,Understood
+155,Z,Secure the bag,Obtain something valuable
+156,Alpha,Shade,Subtle disrespect or criticism
+157,Alpha,Ship,To support a romantic relationship between people
+158,Z,Ship,Support a romantic relationship
+159,Alpha,Shook,Shocked or surprised
+160,Z,Shook,Shocked or surprised
+161,Alpha,Shooketh,Extremely shocked or surprised
+162,Z,Shooketh,Extremely shocked
+163,Alpha,Sigma,"Independent, cool, or used as nonsensical intensifier"
+164,Alpha,Simp,Someone who is overly attentive to their crush
+165,Z,Simp,Overly attentive to someone
+166,Z,Situationship,Undefined romantic relationship
+167,Alpha,Skibidi,"Nonsensical viral term, used as filler or intensifier"
+168,Z,Skrt,"Sound of tires screeching, means stop"
+169,Alpha,Sksksk,Expression of laughter or excitement
+170,Alpha,Slaps,"Sounds good, especially music"
+171,Z,Slaps,"Sounds good, especially music"
+172,Alpha,Slay,To do something exceptionally well
+173,Z,Slay,To do something exceptionally well
+174,Z,Slide into DMs,Privately message someone
+175,Z,Snack,Attractive person
+176,Z,Snatched,Looking exceptionally good
+177,Z,Spill the tea,Share the gossip
+178,Alpha,Squad,Group of friends
+179,Alpha,Stan,An overzealous or dedicated fan
+180,Z,Stan,Overzealous or dedicated fan
+181,Alpha,Sus,Suspicious or questionable
+182,Z,Sus,Suspicious or suspect
+183,Z,Swerve,Avoid or dodge
+184,Alpha,Swole,Muscular or physically fit
+185,Z,TBT,Throwback Thursday
+186,Alpha,TFW,That Feeling When
+187,Z,TFW,That Feeling When
+188,Alpha,Tea,Gossip or news
+189,Z,Tea,Gossip or news
+190,Alpha,Tea spill,To share gossip or secrets
+191,Z,Thicc,Curvaceous or full-figured
+192,Alpha,Thirst trap,Flirtatious photo posted to attract attention
+193,Z,Thirst trap,Flirtatious photo posted for attention
+194,Alpha,Thirsty,Desperately seeking attention or validation
+195,Z,Thirsty,Desperate for attention
+196,Z,Throw shade,Subtly insult or criticize
+197,Alpha,Trash,Bad or low quality
+198,Z,Trash,Bad or low quality
+199,Alpha,Trolling,Deliberately provoking or upsetting others online
+200,Z,Trolling,Deliberately provoking others online
+201,Alpha,Tweaking,Acting strange or out of character
+202,Z,Tweaking,Acting strange or out of character
+203,Alpha,Unalive,Euphemism for kill/die (to avoid content moderation)
+204,Z,Unalive,Euphemism for kill/die (to avoid content moderation)
+205,Alpha,Unc,"Short for Uncle, someone perceived as older or out of touch"
+206,Z,Understood the assignment,Performed perfectly
+207,Alpha,Very mindful,"Paired with demure, ironic restraint and modesty"
+208,Alpha,Vibe,Atmosphere or feeling
+209,Z,Vibe check,Assess someone's mood or energy
+210,Z,Vibes,Feelings or atmosphere
+211,Alpha,Vibing,Relaxing or enjoying oneself
+212,Z,Vibing,Enjoying the atmosphere
+213,Alpha,W,Win or victory
+214,Z,W,Win or success
+215,Z,Wack,Lame or bad
+216,Z,Wavy,Cool or chill
+217,Alpha,What the sigma,"Nonsensical exclamation, like ""What the heck"""
+218,Alpha,Whip,Car
+219,Alpha,Wig snatched,Amazed or impressed to the point of being speechless
+220,Z,Wig snatched,Amazed or impressed
+221,Z,Woke,Socially aware or conscious
+222,Alpha,YOLO,You Only Live Once
+223,Z,YOLO,You Only Live Once
+224,Alpha,Yap,Talking too much
+225,Z,Yap,Talking too much
+226,Alpha,Yass,Enthusiastic agreement or approval
+227,Alpha,Yeet,To throw something with force
+228,Z,Yeet,To throw with force
+229,Z,Yikes,Expression of shock or concern
+230,Alpha,Zaddy,Attractive and stylish man
+231,Z,Zaddy,"Attractive, fashionable man"
+232,Alpha,Zoomer,Member of Generation Z or Alpha
